@@ -1,0 +1,236 @@
+*{
+	font-family:"微软雅黑",arial;
+}
+a:hover,a:focus{
+	text-decoration:none;
+}
+/*导航开始*/
+.nav{
+	height:60px;
+	padding:0 20px;
+	position: fixed;
+	left:0;
+	z-index: 5;
+	min-width: 100%;
+	top:0;
+}
+.dropdown-box{
+	height: 60px;
+}
+.dropdown span{
+	color: #fff;
+    font-size: 16px;
+    width: 89px;
+    display: inline-block; 
+    text-align: left;
+    margin-left:23px; 
+}
+ul.dropdown{
+	background:rgba(0,0,0,.2);
+	width: 248px!important;
+    padding: 0;
+    border-radius: 0 0 3px 3px;
+    text-align: left;
+    display: none;
+    padding-bottom:15px;
+}
+.nav-left{
+	 height:50px; 
+	 background:url(../img/new_cloud_logo.png) no-repeat;
+	 width: 150px;
+	 background-size:100%;
+	 background-position:0 15px;
+	 float: left;
+}
+.nav-right,.nav-btn{
+	float:right;
+	height: 100%;
+}
+.nav-right ul{
+	float: left;
+	margin-top:13px;
+}
+.nav-right ul li{
+	display: inline-block;
+}
+.nav-right ul li a{
+	display: inline-block;
+	padding:7px 24px;
+	margin-left:-3px;
+	border-radius:3px;
+	box-sizing:border-box;
+	font-size: 16px;
+	line-height: 20px;
+	color:#fff;
+}
+.nav-right ul li a:hover{
+	 background:rgba(0,0,0,.2);
+	 text-decoration:none;
+}
+.nav-right ul li a i{
+	 font-size:12px;
+	 color:#fff; 
+}
+a.meau{
+    margin: 8px 0;
+    color: #383838;
+    padding: 6px 15px;
+    border: 1px solid #383838;
+    background-color: #FFF;
+    float: right;
+    display: none;
+    
+}
+.nav-btn ul li a{
+	border:1px solid #fff;
+	padding:4px 12px;
+	border-radius:2px;	
+}
+.nav-btn ul li a:hover{
+	background:#fff;
+	color:#03A9F4;
+}
+.nav-btn ul li a.register{
+	 margin-left:12px;
+	 border:1px solid #03A9F4;
+	 color:#03A9F4; 
+}
+.nav-btn ul li a.register:hover{
+	 background: #03A9F4;
+	 color:#fff;
+	 display: block;
+	
+}
+@media screen and (max-width:768px){
+	.nav-btn{
+		display:none;
+	}
+	.nav-btn a{
+		 width: 100%;
+	}
+	a.meau{
+		display: block;
+	}
+	.nav-right>ul{
+		display:none;
+		width: 100%;
+	}
+	
+	.nav-right>ul li{
+		display: block;
+		width: 100%;
+	}
+	.nav-right>ul li a{
+		text-align: center;
+		width: 100%;
+		line-height: 40px;
+	}
+	.nav-right{
+		margin-top:0px;
+		float: left;
+		width: 100%;
+	}
+	.nav-left{
+		background-position: left 14px!important;
+		background:url(../img/cloud_logo@2x.png) no-repeat;
+		background-size:100%;
+		
+	}
+	ul.dropdown{
+		width: 100%!important;
+		box-sizing:border-box;
+	}
+	.nav-right ul.dropdown li a{
+		width: 48%;
+		float: left;
+		text-align: left;
+	}
+	.nav{
+		background:#fff;
+	}
+	.nav-right ul li a,.nav-right ul li span{
+		color:#333;
+	 }
+	 .nav-right ul li a i{
+	 	color:#999;
+	 }
+	 .nav-right ul li span{
+	 	width:45%;
+	 }
+	 .nav-right ul li a:hover{
+	 	background:#fff;
+	 }
+	 ul.dropdown{
+	 	background: #fff;
+	 	margin-top:0px;
+	 }
+	 ul.dropdown a{
+	 	
+	 }
+	 .nav-btn,.nav-btn>ul{
+	 	float: none;
+	 }
+	 .nav-btn li,.nav-btn li a{
+	 	display: block;
+	 	width: 100%;
+	 	
+	 	text-align: center;
+	 }
+	 .nav-btn ul li a{
+	 	border:1px solid #333;
+	 	height:40px;
+	 	line-height: 40px!important;
+	 	margin-bottom:10px;
+	 	padding:0px;
+	 	border-radius:4px;
+	 }
+}
+/*导航结束*/
+/*banner轮播图开始*/
+.banner-box{
+	position: relative;
+	width: 100%;
+	overflow:hidden;
+}
+.banner-img{
+	width: 100%;
+	min-height:700px;
+}
+.banner-img a{
+	display: block;
+	float: left;
+	width: 100%;
+	height:700px;
+}
+.banner-btn{
+	right:6%;
+	bottom:4%;
+	margin-top:-5px;
+	position: absolute;
+	z-index: 6;
+}
+.banner-btn a{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background: #ccc;
+	display:block;
+	float: left;
+	margin-left:8px;
+	
+}
+.banner-img a:nth-child(1){
+	background:url(../img/index1-00.jpg);
+	background-position:center top;
+	background-size:cover;
+	
+}
+.banner-img a:nth-child(2){
+	background:url(../img/index1-01.jpg);
+	background-position:center top;
+	background-size:cover;
+}
+.banner-btn a.active{
+	background: #fff;
+}
+/*banner轮播图结束*/
