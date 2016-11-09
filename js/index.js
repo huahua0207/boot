@@ -42,13 +42,15 @@ $(function(){
 		}
 	})
 	//轮播图开始
-	$(".banner-img a:not(.not)").hide;
-	$(".banner-btn a").click(function(){
-		var index=$(this).index();
-		$(".banner-img a").hide().eq(index).show();
-		$(".banner-btn a").removeClass("active");
-		$(this).addClass("active");
-	})
+	var swiper = new Swiper('.swiper-container', {
+        pagination:'.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+	
 	
 
 })

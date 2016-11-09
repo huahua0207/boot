@@ -144,6 +144,7 @@ a.meau{
 		width: 48%;
 		float: left;
 		text-align: left;
+		
 	}
 	.nav{
 		background:#fff;
@@ -159,13 +160,11 @@ a.meau{
 	 }
 	 .nav-right ul li a:hover{
 	 	background:#fff;
+	 	
 	 }
 	 ul.dropdown{
 	 	background: #fff;
-	 	margin-top:0px;
-	 }
-	 ul.dropdown a{
-	 	
+	 	margin-top:0px;	
 	 }
 	 .nav-btn,.nav-btn>ul{
 	 	float: none;
@@ -173,7 +172,6 @@ a.meau{
 	 .nav-btn li,.nav-btn li a{
 	 	display: block;
 	 	width: 100%;
-	 	
 	 	text-align: center;
 	 }
 	 .nav-btn ul li a{
@@ -217,20 +215,24 @@ a.meau{
 	display:block;
 	float: left;
 	margin-left:8px;
-	
 }
 .banner-img a:nth-child(1){
 	background:url(../img/index1-00.jpg);
 	background-position:center top;
 	background-size:cover;
-	
 }
 .banner-img a:nth-child(2){
 	background:url(../img/index1-01.jpg);
 	background-position:center top;
 	background-size:cover;
+	
 }
 .banner-btn a.active{
-	background: #fff;
+	background:#fff;
 }
 /*banner轮播图结束*/
+/*下面的轮播开始*/
+.slide-box{
+	width:80%;
+}
+/*下面的轮播结束*/
